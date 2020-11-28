@@ -1,0 +1,16 @@
+/* Delete task button */
+.delete-task-btn {
+  display: flex;
+  font-family: var(--ff-josefin-sans);
+  font-size: var(--fs-x);
+  align-items: center;
+  line-height: 0;
+  flex-shrink: 0;
+  font-weight: var(--fw-ultralight);
+  margin: 0 0 0 auto;
+  transform: rotate(45deg);
+  color: var(--dark-grayish-blue);
+  transition: all 0.5s;
+}
+
+

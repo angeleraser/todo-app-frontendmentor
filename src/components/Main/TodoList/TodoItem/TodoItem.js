@@ -1,13 +1,13 @@
 import React from "react";
+import { CompleteTaskBtn } from "./Buttons/CompleteTaskBtn";
+import { DeleteTaskBtn } from "./Buttons/DeleteTaskBtn";
 
 export const TodoItem = () => {
   return (
     <div className="task-item">
-      <div className="complete-task-btn">
-        <button aria-label="Complete task button"></button>
-      </div>
-      <h3>Learn Javascript</h3>
-      <button className="delete-task">X</button>
+      <CompleteTaskBtn />
+      <button className="task-name">Learn Javascript</button>
+      <DeleteTaskBtn />
     </div>
   );
 };

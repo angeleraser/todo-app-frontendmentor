@@ -1,6 +1,7 @@
 :root {
   /* Colours */
   --bright-blue: hsl(220, 98%, 61%);
+  --bright-cyan: hsl(192, 100%, 67%);
 
   /* Checkbox BG */
   --checkbox-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
@@ -16,6 +17,7 @@
   --fs-x: 32px;
 
   /* Font Weights */
+  --fw-ultralight: 100;
   --fw-regular: 400;
   --fw-bold: 700;
 

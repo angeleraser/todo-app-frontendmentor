@@ -1,0 +1,29 @@
+/* Item */
+.todo-list .task-item {
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.todo-list .task-item::before {
+  display: none;
+}
+
+.todo-list .task-item:not(:last-child) {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+/* Task name */
+.todo-list .task-item .task-name {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: var(--fs-s);
+  width: auto;
+  font-family: var(--ff-josefin-sans);
+  transition: all 0.5s;
+}
+
+.dark-mode .task-item:hover .task-name {
+  color: var(--bright-cyan);
+}

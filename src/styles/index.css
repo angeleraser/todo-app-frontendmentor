@@ -28,3 +28,7 @@
 @import "./components/Main/TodoList/TodoList.css";
 /* List Nav */
 @import "./components/Main/TodoList/ListNav/ListNav.css";
+/* Todo List Item */
+@import "./components/Main/TodoList/TodoItem/TodoItem.css";
+@import "./components/Main/TodoList/TodoItem/Buttons/CompleteTaskBtn.css";
+@import "./components/Main/TodoList/TodoItem/Buttons/DeleteTaskBtn.css";

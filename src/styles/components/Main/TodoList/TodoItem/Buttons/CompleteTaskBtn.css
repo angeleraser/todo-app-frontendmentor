@@ -1,0 +1,50 @@
+/* Complete task button */
+.complete-task-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background-color: var(--dark-grayish-blue);
+  background-image: none;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.complete-task-btn-wrapper:hover {
+  background-color: transparent;
+  background-image: var(--checkbox-bg);
+}
+
+.complete-task-btn-wrapper button {
+  width: 100%;
+  background-color: var(--card-bg-color);
+  height: 100%;
+  border-radius: 50%;
+}
+
+.complete-task-btn-wrapper svg {
+  stroke: transparent;
+  fill: none;
+}
+
+/* Checked styles */
+.complete-task-btn-wrapper.checked {
+  background-image: var(--checkbox-bg);
+}
+
+.complete-task-btn-wrapper.checked button {
+  background-color: transparent;
+}
+
+.complete-task-btn-wrapper.checked svg {
+  stroke: var(--light-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .complete-task-btn-wrapper {
+    width: 26px;
+    height: 26px;
+  }
+}
