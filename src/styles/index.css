@@ -7,3 +7,19 @@
 /* Settings and Variables */
 @import "./settings/settings.css";
 
+/* Utils & Shared Styles */
+@import "./utils/utils.css";
+
+/* Components */
+
+/* Header */
+@import "./components/Header/Header.css";
+
+/* Theme Toggle Button */
+@import "./components/Header/ThemeToggleButton/ThemeToggleButton.css";
+
+/* Main */
+@import "./components/Main/Main.css";
+
+/* Create New Todo */
+@import "./components/Main/CreateNewTodo/CreateNewTodo.css";
