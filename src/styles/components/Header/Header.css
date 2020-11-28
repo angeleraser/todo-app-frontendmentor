@@ -19,7 +19,7 @@
   color: var(--light-gray);
 }
 
-.dark-theme .header {
+.dark-mode .header {
   background-image: url("../../../assets/jpg/bg-desktop-dark.jpg");
 }
 

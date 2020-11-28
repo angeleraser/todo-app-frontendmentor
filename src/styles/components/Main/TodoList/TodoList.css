@@ -1,7 +1,12 @@
 .todo-list {
   background-color: var(--wrapper-bg-color);
   margin-top: 16px;
-  overflow: hidden;
   border-radius: 6px;
   box-shadow: var(--box-shadow);
+}
+
+.todo-list .tasks {
+  height: 380px;
+  background-color: var(--card-bg-color);
+  overflow-y: auto;
 }

@@ -20,16 +20,6 @@
   width: 100%;
 }
 
-.task-item::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  border: 1px solid var(--dark-grayish-blue);
-  border-radius: 50%;
-  margin-right: 12px;
-}
 
 .task-item > *:not(:last-child) {
   margin-right: 12px;
@@ -40,16 +30,7 @@
     padding: 20px;
   }
 
-  .task-item::before {
-    width: 26px;
-    height: 26px;
-  }
-
   .task-item > *:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  .task-item::before {
     margin-right: 20px;
   }
 }

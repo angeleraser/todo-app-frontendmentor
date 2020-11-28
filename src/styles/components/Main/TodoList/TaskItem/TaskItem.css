@@ -3,13 +3,18 @@
   border-radius: 0;
   box-shadow: none;
   overflow: hidden;
+  flex-shrink: 0;
+}
+
+.todo-list .task-item:first-child {
+  border-radius: 6px 6px 0 0;
 }
 
 .todo-list .task-item::before {
   display: none;
 }
 
-.todo-list .task-item:not(:last-child) {
+.todo-list .task-item {
   border-bottom: 1px solid var(--dark-grayish-blue);
 }
 
@@ -26,4 +31,10 @@
 
 .dark-mode .task-item:hover .task-name {
   color: var(--bright-cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .todo-list .task-item .task-name {
+    font-size: var(--fs-sl);
+  }
 }

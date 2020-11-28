@@ -25,6 +25,6 @@
 
 @media screen and (min-width: 768px) {
   .create-new-todo input {
-    font-size: var(--fs-s);
+    font-size: var(--fs-sl);
   }
 }

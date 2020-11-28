@@ -1,15 +1,17 @@
 import React from "react";
-import { TodoItem } from "./TodoItem/TodoItem";
+import { TaskItem } from "./TaskItem/TaskItem";
+import { TodoOptions } from "./TodoOptions/TodoOptions";
 
 export const TodoList = () => {
   return (
     <div className="todo-list wrapper max-width">
       <div className="wrapper tasks">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        <TaskItem />
+        <TaskItem />
+        <TaskItem />
+        <TaskItem />
       </div>
+      <TodoOptions />
     </div>
   );
 };

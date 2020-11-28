@@ -1,0 +1,31 @@
+.todo-options {
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 18px 22px;
+  justify-content: space-between;
+  background-color: var(--card-bg-color);
+  border-top: 1px solid var(--dark-grayish-blue);
+  position: relative;
+  border-radius: 0 0 6px 6px;
+}
+
+.todo-options .items-left,
+.todo-options .clear-completed-btn {
+  font-size: var(--fs-s);
+  color: var(--dark-grayish-blue);
+  font-weight: var(--fw-bold);
+  flex-shrink: 0;
+  font-family: var(--ff-josefin-sans);
+}
+
+.todo-options .clear-completed-btn:hover {
+  color: var(--text-color);
+}
+
+
+@media screen and (min-width: 768px) {
+  .todo-options .items-left,
+  .todo-options .clear-completed-btn {
+    font-size: calc(var(--fs-sl) * 0.7);
+  }
+}

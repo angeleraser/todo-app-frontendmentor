@@ -1,0 +1,50 @@
+.todo-options-nav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: calc(-100% - 26px);
+}
+
+.todo-options-nav ul {
+  flex-direction: row;
+  justify-content: center;
+  padding: 18px 22px;
+  border-radius: 6px;
+  background-color: var(--card-bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.todo-options-nav button.is-selected {
+  color: var(--bright-blue);
+}
+
+.todo-options-nav button {
+  font-size: calc(var(--fs-sl) * 0.8);
+  font-weight: var(--fw-bold);
+  color: var(--dark-grayish-blue);
+  font-family: var(--ff-josefin-sans);
+  cursor: pointer;
+}
+
+.todo-options-nav ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.todo-options-nav button:hover {
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .todo-options-nav {
+    position: static;
+    width: auto;
+  }
+
+  .todo-options-nav ul {
+    padding: 0;
+  }
+
+  .todo-options-nav button {
+    font-size: calc(var(--fs-sl) * 0.7);
+  }
+}

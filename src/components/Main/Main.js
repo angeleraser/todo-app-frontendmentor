@@ -5,8 +5,10 @@ import { TodoList } from "./TodoList/TodoList";
 export const Main = () => {
   return (
     <main className="main wrapper">
-      <CreateNewTodo />
-      <TodoList />
+      <div className="content wrapper max-width">
+        <CreateNewTodo />
+        <TodoList />
+      </div>
     </main>
   );
 };

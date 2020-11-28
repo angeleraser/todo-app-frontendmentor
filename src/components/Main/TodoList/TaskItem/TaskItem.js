@@ -2,7 +2,7 @@ import React from "react";
 import { CompleteTaskBtn } from "./Buttons/CompleteTaskBtn";
 import { DeleteTaskBtn } from "./Buttons/DeleteTaskBtn";
 
-export const TodoItem = () => {
+export const TaskItem = () => {
   return (
     <div className="task-item">
       <CompleteTaskBtn />
