@@ -3,13 +3,13 @@
   --bright-blue: hsl(220, 98%, 61%);
 
   /* Checkbox BG */
-  --checkbox-bg: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --checkbox-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
   --box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
 
   /* Font Sizes */
   --fs-ss: 12px;
-  --fs-s: 16px;
+  --fs-s: 14px;
   --fs-sl: 20px;
   --fs-l: 24px;
   --fs-m: 28px;

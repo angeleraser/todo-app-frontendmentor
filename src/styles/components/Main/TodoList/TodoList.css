@@ -1,0 +1,61 @@
+.todo-list {
+  background-color: var(--wrapper-bg-color);
+  margin-top: 16px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+
+/* Item */
+.todo-list .task-item {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.todo-list .task-item::before {
+  display: none;
+}
+
+.todo-list .task-item:not(:last-child) {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.todo-list .task-item h3 {
+  color: var(--text-color);
+  font-size: var(--fs-s);
+  font-family: var(--ff-josefin-sans);
+}
+
+/* Complete task button */
+
+.todo-list .task-item .complete-task-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background-color: var(--dark-grayish-blue);
+  background-image: none;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.todo-list .task-item .complete-task-btn:hover {
+  background-color: transparent;
+  background-image: var(--checkbox-bg);
+}
+
+.todo-list .task-item .complete-task-btn button {
+  width: 100%;
+  background-color: var(--card-bg-color);
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .todo-list .task-item .complete-task-btn {
+    width: 26px;
+    height: 26px;
+  }
+}

@@ -1,37 +1,13 @@
-.create-new-todo {
-  flex-direction: row;
-  align-items: stretch;
-  padding: 14px 22px;
-  border-radius: 6px;
-  background-color: var(--card-bg-color);
-  box-shadow: var(--box-shadow);
-}
-
-.create-new-todo::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  border: 1px solid var(--dark-grayish-blue);
-  border-radius: 50%;
-}
-
 .create-new-todo label,
 .create-new-todo input {
   width: 100%;
-}
-
-.create-new-todo label,
-.create-new-todo::before {
-  margin-right: 12px;
 }
 
 .create-new-todo input {
   border: none;
   height: 100%;
   font-family: var(--ff-josefin-sans);
-  font-size: var(--fs-ss);
+  font-size: var(--fs-s);
   background-color: transparent;
   color: var(--text-color);
 }
@@ -48,19 +24,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .create-new-todo {
-    padding: 20px;
-  }
-
-  .create-new-todo::before {
-    width: 26px;
-    height: 26px;
-  }
-  .create-new-todo label,
-  .create-new-todo::before {
-    margin-right: 20px;
-  }
-
   .create-new-todo input {
     font-size: var(--fs-s);
   }

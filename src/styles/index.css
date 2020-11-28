@@ -23,3 +23,8 @@
 
 /* Create New Todo */
 @import "./components/Main/CreateNewTodo/CreateNewTodo.css";
+
+/* Todo List */
+@import "./components/Main/TodoList/TodoList.css";
+/* List Nav */
+@import "./components/Main/TodoList/ListNav/ListNav.css";

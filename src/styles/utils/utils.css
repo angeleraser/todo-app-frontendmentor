@@ -8,3 +8,48 @@
 .max-width {
   max-width: 540px;
 }
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 14px 22px;
+  border-radius: 6px;
+  background-color: var(--card-bg-color);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+
+.task-item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 1px solid var(--dark-grayish-blue);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.task-item > *:not(:last-child) {
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .task-item {
+    padding: 20px;
+  }
+
+  .task-item::before {
+    width: 26px;
+    height: 26px;
+  }
+
+  .task-item > *:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .task-item::before {
+    margin-right: 20px;
+  }
+}
