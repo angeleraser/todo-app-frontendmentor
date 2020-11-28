@@ -9,6 +9,7 @@
   min-height: 200px;
   padding: 44px 24px;
   width: 100%;
+  background-image: var(--checkbox-bg);
 }
 
 .header h1 {

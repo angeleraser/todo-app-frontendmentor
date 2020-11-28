@@ -29,7 +29,12 @@
   transition: all 0.5s;
 }
 
-.dark-mode .task-item:hover .task-name {
+.todo-list .task-item.completed .task-name {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.dark-mode .task-item:not(.completed):hover .task-name {
   color: var(--bright-cyan);
 }
 
