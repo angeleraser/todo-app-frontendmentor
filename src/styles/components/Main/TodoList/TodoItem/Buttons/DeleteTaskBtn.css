@@ -13,4 +13,8 @@
   transition: all 0.5s;
 }
 
+.delete-task-btn:hover {
+  color: var(--text-color);
+}
+
 
