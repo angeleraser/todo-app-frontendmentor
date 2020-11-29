@@ -12,7 +12,7 @@ export const CreateNewTodo = () => {
     e.preventDefault();
     if (taskName.trim().length > 4) {
       dispatch(todo_addNewTask(taskName));
-      setTaskName("");
+      setTaskName({ taskName: "", isInvalid: false });
     } else {
       setTaskName({ taskName: "", isInvalid: true });
     }
