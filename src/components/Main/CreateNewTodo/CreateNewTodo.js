@@ -33,7 +33,7 @@ export const CreateNewTodo = () => {
           onChange={handleInputChange}
           placeholder={`${
             isInvalid
-              ? "Name must be at least 5 characters"
+              ? "Name must have at least 5 characters"
               : "Create a new todo..."
           }`}
           type="text"
