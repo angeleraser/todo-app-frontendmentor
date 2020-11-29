@@ -20,6 +20,7 @@ export const CreateNewTodo = () => {
       className="create-new-todo wrapper max-width task-item">
       <label htmlFor="task-name">
         <input
+          autoComplete="off"
           value={taskName}
           onChange={handleInputChange}
           placeholder="Create a new todo..."
