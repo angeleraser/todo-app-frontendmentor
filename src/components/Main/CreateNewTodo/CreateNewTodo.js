@@ -25,6 +25,7 @@ export const CreateNewTodo = () => {
           placeholder="Create a new todo..."
           type="text"
           id="task-name"
+          maxLength={40}
         />
       </label>
       <button>Save</button>

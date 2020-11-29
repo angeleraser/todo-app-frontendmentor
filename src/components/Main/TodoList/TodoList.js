@@ -7,16 +7,21 @@ export const TodoList = () => {
   const {
     todoState: { tasks, view },
   } = useContext(AppContext);
-  const tasksCollection = useMemo(() => getTasksByView({ arr: tasks, view }), [
-    tasks,
-    view,
-  ]);
+  const tasksCollection = useMemo(
+    () =>
+      getTasksByView({ arr: tasks, view }).map((taskProps) => (
+        <TaskItem key={taskProps.id} {...taskProps} />
+      )),
+    [tasks, view]
+  );
   return (
     <div className="todo-list wrapper max-width">
       <div className="wrapper tasks">
-        {tasksCollection.map((taskProps) => (
-          <TaskItem key={taskProps.id} {...taskProps} />
-        ))}
+        {tasksCollection.length ? (
+          tasksCollection
+        ) : (
+          <h2 className="no-tasks">You don't have any task...</h2>
+        )}
       </div>
       <TodoOptions />
     </div>

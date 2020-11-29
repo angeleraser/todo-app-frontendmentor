@@ -24,6 +24,7 @@
   color: var(--dark-grayish-blue);
   font-family: var(--ff-josefin-sans);
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .todo-options-nav ul li:not(:last-child) {

@@ -17,7 +17,7 @@
 }
 
 .create-new-todo button {
-  color: var(--bright-blue);
+  color: var(--bright-cyan);
   font-family: var(--ff-josefin-sans);
   margin: 0 0 0 auto;
   font-size: var(--sl);

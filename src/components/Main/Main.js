@@ -8,6 +8,7 @@ export const Main = () => {
       <div className="content wrapper max-width">
         <CreateNewTodo />
         <TodoList />
+        <div className="tip">Drag and drop to reorder list</div>
       </div>
     </main>
   );

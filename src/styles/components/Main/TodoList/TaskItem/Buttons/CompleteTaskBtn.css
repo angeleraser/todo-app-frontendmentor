@@ -1,8 +1,8 @@
 /* Complete task button */
 .complete-task-btn-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -21,6 +21,7 @@
   width: 100%;
   background-color: var(--card-bg-color);
   height: 100%;
+  flex-shrink: 0;
   border-radius: 50%;
 }
 

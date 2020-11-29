@@ -4,14 +4,12 @@
   box-shadow: none;
   overflow: hidden;
   flex-shrink: 0;
+  align-items: center;
+  cursor: pointer;
 }
 
 .todo-list .task-item:first-child {
   border-radius: 6px 6px 0 0;
-}
-
-.todo-list .task-item::before {
-  display: none;
 }
 
 .todo-list .task-item {
@@ -25,6 +23,8 @@
   color: var(--text-color);
   font-size: var(--fs-s);
   width: auto;
+  text-transform: capitalize;
+  text-align: left;
   font-family: var(--ff-josefin-sans);
   transition: all 0.5s;
 }
@@ -36,6 +36,10 @@
 
 .dark-mode .task-item:not(.completed):hover .task-name {
   color: var(--bright-cyan);
+}
+
+.todo-list .task-item.ondrag {
+  background-color: var(--ondrag-color);
 }
 
 @media screen and (min-width: 768px) {

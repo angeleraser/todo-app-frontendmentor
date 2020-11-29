@@ -7,6 +7,10 @@ import {
 import { AppContext } from "../../../../AppContext/AppContext";
 import { CompleteTaskBtn } from "./Buttons/CompleteTaskBtn";
 import { DeleteTaskBtn } from "./Buttons/DeleteTaskBtn";
+import {
+  handleItemDragStart,
+  handleItemDragEnd,
+} from "../../../../helpers/handleItemDragStart";
 export const TaskItem = ({ name, id, done }) => {
   const { dispatch } = useContext(AppContext);
   const handleToggleCompleteTask = () => {
@@ -16,7 +20,11 @@ export const TaskItem = ({ name, id, done }) => {
     dispatch(todo_DeleteTask(id));
   };
   return (
-    <div className={`task-item${done ? " completed" : ""}`}>
+    <div
+      draggable={true}
+      onDrag={handleItemDragStart}
+      onDragEnd={handleItemDragEnd}
+      className={`task-item${done ? " completed" : ""}`}>
       <CompleteTaskBtn onClick={handleToggleCompleteTask} done={done} />
       <button onClick={handleToggleCompleteTask} className="task-name">
         {name}
