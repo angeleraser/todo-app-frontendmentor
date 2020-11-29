@@ -2,7 +2,7 @@
   align-items: center;
   min-height: calc(100vh - 200px);
   background-color: var(--wrapper-bg-color);
-  padding: 0 24px 100px;
+  padding: 0 24px;
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   color: var(--dark-grayish-blue);
   font-family: var(--ff-josefin-sans);
   text-align: center;
-  margin: 30px 0;
+  margin: 100px 0 20px;
   width: 100%;
 }
 
@@ -28,5 +28,9 @@
   .main .content {
     margin-top: -186px;
     margin-bottom: 0;
+  }
+
+  .main .tip {
+    margin: 30px 0;
   }
 }
