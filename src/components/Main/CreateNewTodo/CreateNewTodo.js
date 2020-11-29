@@ -3,27 +3,39 @@ import { todo_addNewTask } from "../../../actions/todo";
 import { AppContext } from "../../../AppContext/AppContext";
 export const CreateNewTodo = () => {
   const { dispatch } = useContext(AppContext);
-  const [taskName, setTaskName] = useState("");
+  const [{ taskName, isInvalid }, setTaskName] = useState({
+    taskName: "",
+    isInvalid: false,
+  });
+
   const handleAddTaskOnSubmit = (e) => {
     e.preventDefault();
     if (taskName.trim().length > 4) {
       dispatch(todo_addNewTask(taskName));
       setTaskName("");
+    } else {
+      setTaskName({ taskName: "", isInvalid: true });
     }
   };
   const handleInputChange = ({ target: { value } }) => {
-    setTaskName(value);
+    setTaskName({ taskName: value, isInvalid: false });
   };
   return (
     <form
       onSubmit={handleAddTaskOnSubmit}
-      className="create-new-todo wrapper max-width task-item">
+      className={`create-new-todo wrapper max-width task-item ${
+        isInvalid ? "invalid" : ""
+      }`}>
       <label htmlFor="task-name">
         <input
           autoComplete="off"
           value={taskName}
           onChange={handleInputChange}
-          placeholder="Create a new todo..."
+          placeholder={`${
+            isInvalid
+              ? "Name must be at least 5 characters"
+              : "Create a new todo..."
+          }`}
           type="text"
           id="task-name"
           maxLength={40}

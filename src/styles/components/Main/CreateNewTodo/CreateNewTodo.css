@@ -23,6 +23,10 @@
   font-size: var(--sl);
 }
 
+.create-new-todo.invalid input::placeholder {
+  color: var(--danger);
+}
+
 @media screen and (min-width: 768px) {
   .create-new-todo input {
     font-size: var(--fs-sl);

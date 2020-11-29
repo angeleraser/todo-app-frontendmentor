@@ -2,7 +2,7 @@
   /* Colours */
   --bright-blue: hsl(220, 98%, 61%);
   --bright-cyan: hsl(192, 100%, 67%);
-
+  --danger: #f05454;
   /* Checkbox BG */
   --checkbox-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
@@ -35,7 +35,7 @@
   --dark-grayish-blue-2: hsl(235, 19%, 35%);
 
   --card-bg-color: hsl(0, 0%, 98%);
-  --ondrag-color:  hsl(0, 0%, 90%);
+  --ondrag-color: hsl(0, 0%, 90%);
   --wrapper-bg-color: hsl(0, 0%, 98%);
   --text-color: hsl(235, 21%, 11%);
 }
@@ -48,7 +48,7 @@
   --dark-grayish-blue-2: hsl(233, 14%, 35%);
 
   --card-bg-color: hsl(237, 14%, 26%);
-  --ondrag-color:  hsl(237, 14%, 40%);
+  --ondrag-color: hsl(237, 14%, 40%);
   --wrapper-bg-color: hsl(235, 21%, 11%);
   --text-color: hsl(236, 33%, 92%);
 }
