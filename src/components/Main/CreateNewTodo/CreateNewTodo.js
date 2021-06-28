@@ -38,7 +38,6 @@ export const CreateNewTodo = () => {
           }`}
           type="text"
           id="task-name"
-          maxLength={40}
         />
       </label>
       <button>Save</button>
