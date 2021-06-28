@@ -23,7 +23,6 @@
   color: var(--text-color);
   font-size: var(--fs-s);
   width: auto;
-  text-transform: capitalize;
   text-align: left;
   font-family: var(--ff-josefin-sans);
   transition: all 0.5s;
